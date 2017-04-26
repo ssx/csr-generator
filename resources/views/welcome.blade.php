@@ -122,7 +122,7 @@
                                 </div>
                                 <br>
                                 <div class="col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
-                                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="Submit">Submit</button>
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="Submit">Generate CSR &amp; Private Key</button>
                                 </div>
                                 </div>
                             </div>
