@@ -62,7 +62,7 @@
 
                 <div class="col-md-12 text-left">
                   <h2>CSR and Private Key Generator</h2>
-                  <p>You can use the form below to easily create a <code>CSR</code> and <code>4096 bit</code> private key to go with it.</p>
+                  <p>You can use the form below to easily create a <code>CSR</code> and <code>4096 bit</code> private key to go with it. It is recommended that you run your own version of this project for security. You can find more on the [project page on Github](https://github.com/ssx/csr-generator).</p>
                 </div>
               </div>
 
@@ -71,8 +71,6 @@
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="container">
                         <div class="row">
-
-
 
                             <div class="col-sm-12" role="main">
                                 <div class="form-horizontal" role="form">
@@ -120,7 +118,7 @@
                                 </div>
                                 <br>
                                 <div class="col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
-                                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="Submit">Generate CSR &amp; Private Key</button>
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="Submit">Generate</button>
                                 </div>
                                 </div>
                             </div>
