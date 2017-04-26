@@ -64,7 +64,7 @@
 
                 <div class="col-md-12 text-left">
                   <h2>CSR and Private Key Generator</h2>
-                  <p>You can use the form below to easily create a <code>CSR</code> and private key to go with it.</p>
+                  <p>You can use the form below to easily create a <code>CSR</code> and <code>4096 bit</code> private key to go with it.</p>
                 </div>
               </div>
 
