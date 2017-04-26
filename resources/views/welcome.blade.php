@@ -59,7 +59,7 @@
 
               <div class="container">
                 <div class="col-md-12 text-center">
-                  <br><img width="200" class="align-center" src="ssl.jpg" alt="SSL">
+                  <br><img width="200" class="align-center" src="ssl.png" alt="SSL">
                 </div>
 
                 <div class="col-md-12 text-left">
