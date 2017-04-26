@@ -1,34 +1,34 @@
+<div style="text-align: center">
+  [![Padlock](https://csr.tools.ssx.io/ssl.png)]()
+</div>
+
 ### CSR Generator
+
+[![Travis](https://img.shields.io/travis/ssx/csr-generator.svg)]()
+[![Packagist](https://img.shields.io/packagist/v/ssx/csr-generator.svg)]() [![license](https://img.shields.io/github/license/ssx/csr-generator.svg)]()
 
 This small Laravel project allows you to quickly and easily create a CSR
 request and then get a private key and CSR returned. There is a hosted version
 online at https://csr.tools.ssx.io which you are free to use.
 
 
+
+### Security Recommendations
+
+It is highly recommended that you download this project and run it locally or
+within your work network instead of over the web. You can also use `composer create-project ssx/csr-generator` to install via [Composer](https://getcomposer.org/).
+
+
+
 #### Feedback
 
 If you have feedback or suggestions for this project, please add it to the
-[ssx/csr-generator](https://github.com/ssx/csr-generator) Github repository.
+[ssx/csr-generator](https://github.com/ssx/csr-generator) Github repository in a
+new issue.
+
 
 
 #### License
 
-Copyright (c) 2017 Scott Wilcox &lt;scott@dor.ky&gt;
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This project is licensed under an Apache 2.0 license which you can view in the
+[LICENSE](https://github.com/ssx/csr-generator/blob/master/readme.md) file.
