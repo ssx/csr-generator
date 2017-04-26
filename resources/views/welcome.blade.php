@@ -17,9 +17,6 @@
                 height: 100vh;
                 text-align: center;
             }
-            .content {
-                margin-top: 3%;
-            }
             .container {
                width: 600px;
            }
