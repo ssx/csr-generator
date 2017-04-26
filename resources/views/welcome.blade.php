@@ -20,6 +20,21 @@
             .content {
                 margin-top: 5%;
             }
+            .container {
+               width: 600px;
+           }
+
+
+           footer {
+               border-top: 1px solid #ccc;
+               margin-top: 40px;
+               padding-top: 10px;
+           }
+
+           .github-img {
+               height: 30px;
+               display: inline;
+           }
         </style>
     </head>
     <body>
@@ -35,11 +50,26 @@
                     </ul>
                 @endif
 
+              <div class="container">
+                <div class="col-md-12 text-center">
+                  <br><img width="200" class="align-center" src="ssl.jpg" alt="SSL">
+                </div>
+
+                <div class="col-md-12 text-left">
+                  <h2>Create a CSR and private key</h2>
+                  <p>You can use the form below to easily create a <code>CSR</code> and private key to go with it.</p>
+                </div>
+              </div>
+
+              <br>
                 <form method="post" action="/generate" autocomplete="off">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6 col-sm-offset-3" role="main">
+
+
+
+                            <div class="col-sm-12" role="main">
                                 <div class="form-horizontal" role="form">
                                 <div class="form-group">
                                     <label class="control-label col-sm-5 col-xs-5" for="commonName">Domain:</label>
@@ -48,7 +78,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label col-sm-5 col-xs-5" for="commonName">Confirmation of Domain:</label>
+                                    <label class="control-label col-sm-5 col-xs-5" for="commonName">Confirm Domain:</label>
                                     <div class="col-sm-7 col-xs-7">
                                         <input type="text" class="form-control" id="commonName" name="domain_confirmation" placeholder="www.website.co.uk" required>
                                     </div>
@@ -62,7 +92,7 @@
                                 <div class="form-group">
                                     <label class="control-label col-sm-5 col-xs-5" for="localityName">City:</label>
                                     <div class="col-sm-7 col-xs-7">
-                                        <input type="text" class="form-control" id="localityName" name="city" placeholder="Newcasttle under Lyme" required>
+                                        <input type="text" class="form-control" id="localityName" name="city" placeholder="Newcastle under Lyme" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -90,8 +120,20 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        <div class="col-md-12">
+                            <footer class="text-center">
+                                Built by <a href="https://dor.ky">Scott Wilcox</a> &middot; Feedback via <a href="https://github.com/ssx/csr-generator"><img height="50" class="github-img" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github"></a>
+                            </footer>
+                        </div>
+
                     </div>
+
+
                 </form>
+
+
 
             </div>
         </div>
