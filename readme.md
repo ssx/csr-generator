@@ -31,4 +31,4 @@ new issue.
 #### License
 
 This project is licensed under an Apache 2.0 license which you can view in the
-[LICENSE](https://github.com/ssx/csr-generator/blob/master/readme.md) file.
+[LICENSE](https://github.com/ssx/csr-generator/blob/master/LICENSE) file.
