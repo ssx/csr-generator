@@ -5,15 +5,15 @@ request and then get a private key and CSR returned. There is a hosted version
 online at https://csr.tools.ssx.io which you are free to use.
 
 
-#### Feedback
+#### Feedback
 
 If you have feedback or suggestions for this project, please add it to the
-ssx/csr-generator Github repository.
+[ssx/csr-generator](https://github.com/ssx/csr-generator) Github repository.
 
 
 #### License
 
-Copyright (c) 2017 Scott Wilcox <scott@dor.ky>
+Copyright (c) 2017 Scott Wilcox &lt;scott@dor.ky&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
