@@ -1,5 +1,5 @@
 <div style="text-align: center">
-  [![Padlock](https://csr.tools.ssx.io/ssl.png)]()
+  <img src="https://csr.tools.ssx.io/ssl.png" alt="Padlock">
 </div>
 
 ### CSR Generator
