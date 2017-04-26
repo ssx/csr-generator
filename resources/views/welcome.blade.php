@@ -18,12 +18,11 @@
                 text-align: center;
             }
             .content {
-                margin-top: 5%;
+                margin-top: 3%;
             }
             .container {
                width: 600px;
            }
-
 
            footer {
                border-top: 1px solid #ccc;
@@ -35,7 +34,6 @@
                height: 30px;
                display: inline;
            }
-
 
            body {
              background-color: #ffffff;
@@ -128,7 +126,6 @@
                             </div>
                         </div>
 
-
                         <div class="col-md-12">
                             <footer class="text-center">
                                 Built by <a href="https://dor.ky">Scott Wilcox</a> &middot; Feedback via <a href="https://github.com/ssx/csr-generator"><img height="50" class="github-img" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github"></a>
@@ -137,10 +134,7 @@
 
                     </div>
 
-
                 </form>
-
-
 
             </div>
         </div>
