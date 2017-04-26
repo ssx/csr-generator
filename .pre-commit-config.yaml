@@ -4,7 +4,7 @@
     -   id: php-lint
     -   id: php-unit
 -   repo: git://github.com/pre-commit/pre-commit-hooks.git
-    sha: v0.7.1
+    sha: 5bf6c09bfa1297d3692cadd621ef95f1284e33c0
     hooks:
     -   id: trailing-whitespace
     -   id: detect-private-key
