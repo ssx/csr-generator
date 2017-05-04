@@ -1,5 +1,5 @@
 <div style="text-align: center">
-  <img src="https://csr.tools.ssx.io/ssl.png" alt="Padlock">
+  <img src="https://csr.ssx.tools/ssl.png" alt="Padlock">
 </div>
 
 ### CSR Generator
@@ -9,7 +9,7 @@
 
 This small Laravel project allows you to quickly and easily create a CSR
 request and then get a private key and CSR returned. There is a hosted version
-online at https://csr.tools.ssx.io which you are free to use.
+online at https://csr.ssx.tools/ which you are free to use.
 
 
 
