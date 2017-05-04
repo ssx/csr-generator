@@ -9,7 +9,7 @@
 
 This small Laravel project allows you to quickly and easily create a CSR
 request and then get a private key and CSR returned. There is a hosted version
-online at https://csr.ssx.tools/ which you are free to use.
+online at https://csr.ssx.tools which you are free to use.
 
 
 
