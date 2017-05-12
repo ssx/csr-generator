@@ -14,9 +14,9 @@ pipeline:
       - composer install
       - mkdir -p build/logs
       - git submodule update --init --recursive
-      - phpunit -c phpunit.xml
+      - vendor/bin/phpunit
 
       # coveralls
-      - printf "%s\n------------------------------\n-----  C O V E R A L L S -----\n------------------------------%s\n%s\n"
-      - coveralls -v -x build/logs/clover.xml
+      # - printf "%s\n------------------------------\n-----  C O V E R A L L S -----\n------------------------------%s\n%s\n"
+      # - coveralls -v -x build/logs/clover.xml
       
