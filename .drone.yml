@@ -1,0 +1,9 @@
+pipeline:
+  build:
+    image: phpunit/phpunit
+      cache:
+        - vendor
+      commands:
+        - echo Building Started
+        - composer install
+        - phpunit
