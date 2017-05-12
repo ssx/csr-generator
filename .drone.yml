@@ -11,6 +11,7 @@ pipeline:
 
       # dependencies, tests.
       - printf "%s\n------------------------------\n---------  S T A R T ---------\n------------------------------%s\n%s\n"
+      - composer install
       - mkdir -p build/logs
       - git submodule update --init --recursive
       - phpunit -c phpunit.xml
