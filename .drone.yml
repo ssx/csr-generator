@@ -1,9 +1,21 @@
 pipeline:
   test:
-    image: phpunit/phpunit
-      cache:
-        - vendor
-      commands:
-        - cp .env.testing .env
-        - composer install
-        - vendor/bin/phpunit
+    image: teameow/dockerfiles:drone
+    commands:
+      # versions
+      - printf "%s\n------------------------------\n-------  V E R S I O N -------\n------------------------------%s\n%s\n"
+      - php -v
+      - git --version
+      - composer --version
+      - phpunit --version
+
+      # dependencies, tests.
+      - printf "%s\n------------------------------\n---------  S T A R T ---------\n------------------------------%s\n%s\n"
+      - mkdir -p build/logs
+      - git submodule update --init --recursive
+      - phpunit -c phpunit.xml
+
+      # coveralls
+      - printf "%s\n------------------------------\n-----  C O V E R A L L S -----\n------------------------------%s\n%s\n"
+      - coveralls -v -x build/logs/clover.xml
+      
