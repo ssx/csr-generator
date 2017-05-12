@@ -1,9 +1,9 @@
 pipeline:
-  build:
+  test:
     image: phpunit/phpunit
       cache:
         - vendor
       commands:
-        - echo Building Started
+        - cp .env.testing .env
         - composer install
-        - phpunit
+        - vendor/bin/phpunit
