@@ -27,6 +27,14 @@ background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox=
             }
 
         </style>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106156366-3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+          gtag('config', 'UA-106156366-3');
+        </script>
     </head>
     <body>
         <div class="content">
