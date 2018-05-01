@@ -1,5 +1,5 @@
 <div style="text-align: center">
-  <img src="https://csr.ssx.tools/ssl.png" alt="Padlock">
+  <img src="https://csr.tools.dor.ky/ssl.png" alt="Padlock">
 </div>
 
 ### CSR Generator
