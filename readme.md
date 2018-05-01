@@ -6,11 +6,10 @@
 
 [![Travis](https://img.shields.io/travis/ssx/csr-generator.svg)]()
 [![Packagist](https://img.shields.io/packagist/v/ssx/csr-generator.svg)]() [![license](https://img.shields.io/github/license/ssx/csr-generator.svg)]()
-[![Build Status](https://drone.ssx.io/api/badges/ssx/csr-generator/status.svg)](https://drone.ssx.io/ssx/csr-generator)
 
 This small Laravel project allows you to quickly and easily create a CSR
 request and then get a private key and CSR returned. There is a hosted version
-online at https://csr.ssx.tools which you are free to use.
+online at https://csr.tools.dor.ky which you are free to use.
 
 
 
