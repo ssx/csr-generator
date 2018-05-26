@@ -47,7 +47,7 @@ Route::post('/generate', function () {
     $privkey = openssl_pkey_new(['private_key_bits' => 4096]);
 
     // Generate a certificate signing request
-    $csr = openssl_csr_new($dn, $privkey, [ 'digest_alg' => 'sha256' ]);
+    $csr = openssl_csr_new($dn, $privkey, ['digest_alg' => 'sha256']);
 
     openssl_csr_export($csr, $csr);
 
