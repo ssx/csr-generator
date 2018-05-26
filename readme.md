@@ -8,8 +8,9 @@
 [![Packagist](https://img.shields.io/packagist/v/ssx/csr-generator.svg)]() [![license](https://img.shields.io/github/license/ssx/csr-generator.svg)]()
 
 This small Laravel project allows you to quickly and easily create a CSR
-request and then get a private key and CSR returned. There is a hosted version
-online at https://csr.tools.dor.ky which you are free to use.
+(SHA256 hashed) request and then get a 4096-bit private key and CSR returned. 
+There is a hosted version online at https://csr.tools.dor.ky which you 
+are free to use.
 
 
 
