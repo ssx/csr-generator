@@ -7,26 +7,7 @@
 
         <title>CSR Generator</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #000000;
-                height: 100vh;
-                text-align: center;
-            }
-            .content {
-                margin-top: 5%;
-            }
-
-            body {
-              background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%2370c836' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
-            }
-
-        </style>
+        <link href="/css/app.css" rel="stylesheet" type="text/css">
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106156366-3"></script>
         <script>
@@ -39,24 +20,41 @@ background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox=
     <body>
         <div class="content">
             <div class="row">
-                <div class="col-md-6">
-                    Private Key:<br>
-                    <textarea class="col-md-12 form-control" style="height: 600px !important">{{ session("private_key") }}</textarea>
+                <div class="col-md-5 col-md-offset-1">
+                    <h2>Private Key:</h2>
+                    <textarea class="col-md-12 form-control">{{ session("private_key") }}</textarea><br>
+                    <a href="/download/key">
+                        <br><i class="fa fa-fw fa-2x fa-key"></i><br>
+                        Download Private Key
+                    </a>
                 </div>
-                <div class="col-md-6">
-                    CSR:<br>
-                    <textarea class="col-md-12 form-control" style="height: 600px">{{ session("csr") }}</textarea>
+                <div class="col-md-5">
+                    <h3>CSR:</h3>
+                    <textarea class="col-md-12 form-control">{{ session("csr") }}</textarea>
+                    <a href="/download/csr">
+                        <i class="fa fa-fw fa-2x fa-download"></i><br>
+                        Download CSR
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <br>
-                To Verify:<br>
+                To verify, make sure the output of these three commands match:<br>
+                <em>You'll likely need to change {{ trim(session()->get('domain')).'-ssl.key' }}.crt to your actual certificate name.</em>
+                <br>
                 <br>
                 <code>
-                    openssl x509 -noout -modulus -in mydomain.crt | openssl md5<br>
-                    openssl rsa -noout -modulus -in mydomain.key | openssl md5<br>
-                    openssl req -noout -modulus -in mydomain.csr | openssl md5
+                    openssl x509 -noout -modulus -in {{ trim(session()->get('domain')).'-ssl.key' }}.crt | openssl md5<br>
+                    openssl rsa -noout -modulus -in {{ trim(session()->get('domain')).'-ssl.key' }} | openssl md5<br>
+                    openssl req -noout -modulus -in {{ trim(session()->get('domain')).'-ssl.csr' }} | openssl md5
                 </code>
+            </div>
+            <div class="row">
+                <br>
+                <a href="/">
+                    <i class="fa fa-fw fa-2x fa-play-circle"></i><br>
+                    Create New CSR
+                </a>
             </div>
         </div>
     </body>
