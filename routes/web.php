@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/display', function () {
-    if (!session('private_key')) redirect()->to('/');
+    if (!session('private_key')) return redirect()->to('/');
 
     return view('display');
 });
