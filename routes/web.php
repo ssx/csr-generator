@@ -18,6 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/display', function () {
+    if (!session('private_key')) redirect()->to('/');
+
     return view('display');
 });
 
