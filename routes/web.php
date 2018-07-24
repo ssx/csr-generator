@@ -9,16 +9,20 @@
  *  file that was distributed with this source code.
  *
  */
+
 use Illuminate\Support\Facades\Response;
 
 Route::get('/', function () {
     session()->remove('private_key');
     session()->remove('csr');
+
     return view('welcome');
 });
 
 Route::get('/display', function () {
-    if (!session('private_key')) return redirect()->to('/');
+    if (!session('private_key')) {
+        return redirect()->to('/');
+    }
 
     return view('display');
 });
@@ -70,22 +74,26 @@ Route::post('/generate', function () {
     return redirect('/display');
 });
 
-Route::get('/download/key', function() {
-    if (!session('private_key')) abort(400);
+Route::get('/download/key', function () {
+    if (!session('private_key')) {
+        abort(400);
+    }
 
     return Response::make(session()->get('private_key'), 200, [
-        'Content-type' => 'text/plain',
+        'Content-type'        => 'text/plain',
         'Content-Disposition' => 'attachment; filename="'.trim(session()->get('domain')).'-ssl.key"',
-        'Content-Length' => strlen(session('private_key'))
+        'Content-Length'      => strlen(session('private_key')),
     ]);
 });
 
-Route::get('/download/csr', function() {
-    if (!session('csr')) abort(400);
+Route::get('/download/csr', function () {
+    if (!session('csr')) {
+        abort(400);
+    }
 
     return Response::make(session()->get('csr'), 200, [
-        'Content-type' => 'text/plain',
+        'Content-type'        => 'text/plain',
         'Content-Disposition' => 'attachment; filename="'.trim(session()->get('domain')).'-ssl.csr"',
-        'Content-Length' => strlen(session('csr'))
+        'Content-Length'      => strlen(session('csr')),
     ]);
 });
