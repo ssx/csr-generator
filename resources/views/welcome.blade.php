@@ -39,7 +39,7 @@
                   <h2>CSR and Private Key Generator</h2>
                   <p>You can use the form below to easily create a <code>CSR</code> and <code>4096 bit</code> private
                     key to go with it. It is recommended that you run your own version of this project for security.
-                    You can find more on the <a href="https://github.com/ssx/csr-generator">project page on Github</a>.</p>
+                    You can find more on the <a href="https://github.com/issetio/csr-generator">project page on Github</a>.</p>
                 </div>
               </div>
 
@@ -103,7 +103,7 @@
 
                         <div class="col-md-12">
                             <footer class="text-center">
-                                Built by <a href="https://dor.ky">Scott Wilcox</a> &middot; Feedback via <a href="https://github.com/ssx/csr-generator"><img height="50" class="github-img" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github"></a>
+                                Built by <a href="https://dor.ky">Scott Robinson</a> &middot; Feedback via <a href="https://github.com/issetio/csr-generator"><img height="50" class="github-img" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github"></a>
                             </footer>
                         </div>
 
