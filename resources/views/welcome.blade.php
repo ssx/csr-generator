@@ -37,7 +37,9 @@
 
                 <div class="col-md-12 text-left">
                   <h2>CSR and Private Key Generator</h2>
-                  <p>You can use the form below to easily create a <code>CSR</code> and <code>4096 bit</code> private key to go with it. It is recommended that you run your own version of this project for security. You can find more on the [project page on Github](https://github.com/ssx/csr-generator).</p>
+                  <p>You can use the form below to easily create a <code>CSR</code> and <code>4096 bit</code> private
+                    key to go with it. It is recommended that you run your own version of this project for security.
+                    You can find more on the <a href="https://github.com/ssx/csr-generator">project page on Github</a>.</p>
                 </div>
               </div>
 
