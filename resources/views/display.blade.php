@@ -44,7 +44,7 @@
                 <br>
                 <br>
                 <code>
-                    openssl x509 -noout -modulus -in {{ trim(session()->get('domain')).'-ssl.key' }}.crt | openssl md5<br>
+                    openssl x509 -noout -modulus -in {{ trim(session()->get('domain')).'-ssl.crt' }} | openssl md5<br>
                     openssl rsa -noout -modulus -in {{ trim(session()->get('domain')).'-ssl.key' }} | openssl md5<br>
                     openssl req -noout -modulus -in {{ trim(session()->get('domain')).'-ssl.csr' }} | openssl md5
                 </code>
