@@ -1,5 +1,5 @@
 <div style="text-align: center">
-  <img src="https://csr.tools.dor.ky/ssl.png" alt="Padlock">
+  <img src="https://csr.scottr.dev/ssl.png" alt="Padlock">
 </div>
 
 ### CSR Generator
@@ -9,7 +9,7 @@
 
 This small Laravel project allows you to quickly and easily create a CSR
 (SHA256 hashed) request and then get a 4096-bit private key and CSR returned. 
-There is a hosted version online at https://csr.tools.dor.ky which you 
+There is a hosted version online at https://csr.scottr.dev which you 
 are free to use.
 
 
