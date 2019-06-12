@@ -103,7 +103,7 @@
 
                         <div class="col-md-12">
                             <footer class="text-center">
-                                Built by <a href="https://dor.ky">Scott Robinson</a> &middot; Feedback via <a href="https://github.com/ssx/csr-generator"><img height="50" class="github-img" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github"></a>
+                                Built by <a href="https://dor.ky">Scott Robinson</a> &middot; Feedback via <a href="https://github.com/ssx/csr-generator"><img height="50" class="github-img" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github"></a>
                             </footer>
                         </div>
 
